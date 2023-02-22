@@ -3,7 +3,7 @@ const { Configuration, OpenAIApi } = await import("openai");
 let handler = async (m, { args, usedPrefix, command, text }) => {
 if (!text) throw `Example ${usedPrefix}${command} Siapa kah yg nyiptain epep`
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey: global.ChatAi,
 });
 const openai = new OpenAIApi(configuration);
 const response = await openai.createCompletion({
