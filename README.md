@@ -73,5 +73,8 @@ Editing Number Owner & session name in [`config.js`](https://github.com/rasssya7
 * [`zhwzein`](https://github.com/zhwzein)
 * [`CAF-ID`](https://github.com/CAF-ID)
 * [`bintang`](https://github.com/Bintangp02)
+* [`bintang`](https://github.com/Rlxfly)
+ 
+
 
 ```Thanks to all who have participated in the development of this script```
