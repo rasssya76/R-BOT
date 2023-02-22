@@ -73,7 +73,7 @@ Editing Number Owner & session name in [`config.js`](https://github.com/rasssya7
 * [`zhwzein`](https://github.com/zhwzein)
 * [`CAF-ID`](https://github.com/CAF-ID)
 * [`bintang`](https://github.com/Bintangp02)
-* [`bintang`](https://github.com/Rlxfly)
+* [`Re7`](https://github.com/Rlxfly)
  
 
 
