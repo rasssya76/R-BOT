@@ -87,6 +87,7 @@ global.owner = [
 ] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
+global.ChatAi = `Your api` //REGIS DI https://openai.com/api/
 
 /*============== WATERMARK ==============*/
 global.wm = 'By R-BOT' //Main Watermark
