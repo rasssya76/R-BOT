@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix: _p }) => {
 
-
-let buttonMessage= {
+m.reply("Minimal star https://github.com/rasssya76/R-BOT")
+/*let buttonMessage= {
 'document':{'url': 'http://s.id/re-md' },
 'mimetype': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
@@ -25,7 +25,7 @@ let buttonMessage= {
 {'buttonId': _p + 'runtime','buttonText':{'displayText':'ʀᴜɴᴛɪᴍᴇ'},'type':1}
 ],
 'headerType':6}
-    await conn.sendMessage(m.chat,buttonMessage, { quoted: m })
+    await conn.sendMessage(m.chat,buttonMessage, { quoted: m })*/
 
 }
 
