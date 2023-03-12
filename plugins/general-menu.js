@@ -1,6 +1,7 @@
 import { generateWAMessageFromContent } from '@adiwajshing/baileys'
 import jimp from 'jimp'
 import PhoneNumber from 'awesome-phonenumber'
+import { watchFile, unwatchFile, readFileSync } from 'fs'
 
 let handler = async (m, { conn, usedPrefix: _p }) => {
 
@@ -10,7 +11,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
   
 let tags = {}
 const defaultMenu = {
-  before: `Hi, %name 👋\n\n≻ Date: %date\n≻ Time: %time WIB\n≻ Runtime: %uptime\n≻ YouLimit: ${usrs.limit}\n`,
+  before: `Hi, %name 👋\n\n≻ Date: %date\n≻ Time: %time WIB\n≻ Runtime: %uptime\n≻ YouLimit: ${usrs.limit}\n\n`,
   header: '*“%category”*',
   body: `_%cmd%islimit%isPremium_ `,
   footer: '',
@@ -113,7 +114,7 @@ conn.sendButton(m.chat, text.trim(), conn.user.name, await genProfile(conn, m), 
 
 let ppl = await( await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'))
 
-    let ppb = await( await conn.profilePictureUrl(conn.user.jid, 'image').catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'))
+    let ppb = await(  conn.profilePictureUrl(conn.user.jid, 'image').catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'))
     
 //Button image
  /*
@@ -125,7 +126,7 @@ body: me,
 sourceUrl: 'http://s.id/0x404', thumbnail: await( await conn.getFile(ppl)).data
 */
 
-    //await m.reply('_Ｌｏａｄｉｎｇ．．．_')
+    await m.reply('_Ｌｏａｄｉｎｇ．．．_')
  await conn.relayMessage(m.chat, { reactionMessage: { key: m.key, text: '✅'  }}, { messageId: m.key.id })
 // Gif button
     /*
@@ -161,14 +162,14 @@ sourceUrl: 'http://s.id/0x404', thumbnail: await( await conn.getFile(ppl)).data
 }}, { quoted: m
 					})
 */
-/*conn.sendMessage(m.chat, { contextInfo: { externalAdReply: { showAdAttribution: true,
+conn.sendMessage(m.chat, { contextInfo: { externalAdReply: { showAdAttribution: true,
 title: `RAMAGANS©`,
 body: conn.user.name,
 previewType:"PHOTO",
 thumbnail: thumb,
 sourceUrl: `https://chat.whatsapp.com/Bd2mN13f4QV7Mu1vtZ0NuP`,
-}}, text: text.trim()}, { quoted: m })  */
-    let buttonMessage= {
+}}, text: text.trim()}, { quoted: global.ftroli })  
+  /* let buttonMessage= {
 'document':{'url': 'http://s.id/re-md' },
 'mimetype': 'application/pdf',
 'fileName': `「  ${conn.getName(m.sender)}  」`,
@@ -179,20 +180,21 @@ sourceUrl: `https://chat.whatsapp.com/Bd2mN13f4QV7Mu1vtZ0NuP`,
 'mediaUrl': 'https://chat.whatsapp.com/Bd2mN13f4QV7Mu1vtZ0NuP',
 'mediaType': 1,
 'renderLargerThumbnail':true,
+'viewOnce':true,
 'previewType': 2,
 'title': 'BOT -WHATSAPP SIMPLE',
 'body': me,
-'thumbnail': thumb,
+'thumbnail': readFileSync('./me.png'),
 'sourceUrl': 'https://chat.whatsapp.com/Bd2mN13f4QV7Mu1vtZ0NuP'}},
 'caption': text.trim(),
 'footer': `Pliss no spam command!!!`,
 'buttons':[
 {'buttonId': '#dashboard','buttonText':{'displayText':'Dashboard'},'type':1},
-{'buttonId': '#ping','buttonText':{'displayText':'Speed'},'type':1},
-{'buttonId': '#owner','buttonText':{'displayText':'Owner'},'type':1}
+{'buttonId': '#statserver','buttonText':{'displayText':'Statserver'},'type':1},
 ],
 'headerType':6}
-    await conn.sendMessage(m.chat,buttonMessage, { quoted: m })
+
+    await conn.sendMessage(m.chat,buttonMessage, { quoted: m })*/
   } catch (e) {
     m.reply('An error occurred')
     m.reply(e)
@@ -214,4 +216,10 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}
+
+function readMoreeee() {
+
+	return (String.fromCharCode(8206)).repeat(4001)
+
 }
