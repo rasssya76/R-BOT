@@ -162,14 +162,14 @@ sourceUrl: 'http://s.id/0x404', thumbnail: await( await conn.getFile(ppl)).data
 }}, { quoted: m
 					})
 */
-conn.sendMessage(m.chat, { contextInfo: { externalAdReply: { showAdAttribution: true,
+/*conn.sendMessage(m.chat, { contextInfo: { externalAdReply: { showAdAttribution: true,
 title: `RAMAGANS©`,
 body: conn.user.name,
 previewType:"PHOTO",
 thumbnail: thumb,
 sourceUrl: `https://chat.whatsapp.com/Bd2mN13f4QV7Mu1vtZ0NuP`,
-}}, text: text.trim()}, { quoted: global.ftroli })  
-  /* let buttonMessage= {
+}}, text: text.trim()}, { quoted: global.ftroli })  */
+  let buttonMessage= {
 'document':{'url': 'http://s.id/re-md' },
 'mimetype': 'application/pdf',
 'fileName': `「  ${conn.getName(m.sender)}  」`,
@@ -194,7 +194,7 @@ sourceUrl: `https://chat.whatsapp.com/Bd2mN13f4QV7Mu1vtZ0NuP`,
 ],
 'headerType':6}
 
-    await conn.sendMessage(m.chat,buttonMessage, { quoted: m })*/
+    await conn.sendMessage(m.chat,buttonMessage, { quoted: m })
   } catch (e) {
     m.reply('An error occurred')
     m.reply(e)
