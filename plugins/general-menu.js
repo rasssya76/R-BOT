@@ -148,7 +148,7 @@ sourceUrl: 'http://s.id/0x404', thumbnail: await( await conn.getFile(ppl)).data
       }}}}}}, {})*/
 
 
-/* const pre = generateWAMessageFromContent(m.chat, { liveLocationMessage:{
+const pre = generateWAMessageFromContent(m.chat, { liveLocationMessage:{
   degreesLatitude: 35.685506276233525,
   degreesLongitude: 139.75270667105852,
   accuracyInMeters: 100,
@@ -161,7 +161,7 @@ sourceUrl: 'http://s.id/0x404', thumbnail: await( await conn.getFile(ppl)).data
   contextInfo: { mentionedJid: [m.sender] }
 }}, { quoted: m
 					})
-*/
+
 /*conn.sendMessage(m.chat, { contextInfo: { externalAdReply: { showAdAttribution: true,
 title: `RAMAGANS©`,
 body: conn.user.name,
@@ -194,7 +194,7 @@ sourceUrl: `https://chat.whatsapp.com/Bd2mN13f4QV7Mu1vtZ0NuP`,
 ],
 'headerType':6}
 
-    await conn.sendMessage(m.chat,buttonMessage, { quoted: m })
+    //await conn.sendMessage(m.chat,buttonMessage, { quoted: m })
   } catch (e) {
     m.reply('An error occurred')
     m.reply(e)
