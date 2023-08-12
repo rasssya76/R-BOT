@@ -19,9 +19,9 @@ This Script is for everyone, not for Sale. Jika dijual neraka menunggumu brother
 
 
 ```bash
-git clone https://github.com/rasssya76/R-BOT-SIMPLE
-cd R-BOT-SIMPLE
-npm install
+git clone https://github.com/rasssya76/R-BOT
+cd R-BOT
+yarn install
 ```
 
 ## HOW TO CONNECT TO MONGODB WHEN RUN IN HEROKU
