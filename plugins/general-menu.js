@@ -125,9 +125,8 @@ title: time,
 body: me,
 sourceUrl: 'http://s.id/0x404', thumbnail: await( await conn.getFile(ppl)).data
 */
-
-    await m.reply('_Ｌｏａｄｉｎｇ．．．_')
- await conn.relayMessage(m.chat, { reactionMessage: { key: m.key, text: '✅'  }}, { messageId: m.key.id })
+await m.reply('_Ｌｏａｄｉｎｇ．．．_')
+ //await conn.relayMessage(m.chat, { reactionMessage: { key: m.key, text: '✅'  }}, { messageId: m.key.id })
 // Gif button
     /*
  conn.sendMessage(m.chat, { video: { url: vid }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text.trim(), footer: conn.getName('6283820073017@s.whatsapp.net') ,templateButtons: [ { quickReplyButton: { displayText: 'Owner', id: `${_p}owner` }}, { urlButton: { displayText: '𝙎𝘾', url: 'http://github.com/Rlxfly/re-md'} }]})*/
@@ -161,14 +160,13 @@ const pre = generateWAMessageFromContent(m.chat, { liveLocationMessage:{
   contextInfo: { mentionedJid: [m.sender] }
 }}, { quoted: m
 					})
-
-/*conn.sendMessage(m.chat, { contextInfo: { externalAdReply: { showAdAttribution: true,
-title: `RAMAGANS©`,
+conn.sendMessage(m.chat, { contextInfo: { externalAdReply: { showAdAttribution: true,
+title: `WA-BOT`,
 body: conn.user.name,
 previewType:"PHOTO",
 thumbnail: thumb,
 sourceUrl: `https://chat.whatsapp.com/Bd2mN13f4QV7Mu1vtZ0NuP`,
-}}, text: text.trim()}, { quoted: global.ftroli })  */
+}}, text: text.trim()}, { quoted: m }) 
   let buttonMessage= {
 'document':{'url': 'http://s.id/re-md' },
 'mimetype': 'application/pdf',
@@ -219,7 +217,6 @@ function clockString(ms) {
 }
 
 function readMoreeee() {
-
 	return (String.fromCharCode(8206)).repeat(4001)
 
 }
