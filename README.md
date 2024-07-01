@@ -52,7 +52,7 @@ pkg install yarn
 yarn install
 ```
 
-## Installing
+## Running
 ```bash
 $ node .
 ```
@@ -60,7 +60,7 @@ $ node .
 ## ❗ Warning
 Don't put bots in multiple groups or your bot will 💀
 
-Editing Number Owner & session name in [`config.js`](https://github.com/rasssya76/R-BOT-SIMPLE/blob/main/config.js)
+Editing Number Owner & session name in [`config.js`](https://github.com/rasssya76/R-BOT/blob/main/config.js)
 
 ## Thanks To
 * [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
