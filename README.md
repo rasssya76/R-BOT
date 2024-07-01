@@ -19,7 +19,7 @@ This Script is for everyone, not for Sale. Jika dijual neraka menunggumu brother
 
 
 ```bash
-git clone https://github.com/rasssya76/R-BOT-SIMPLE
+git clone https://github.com/rasssya76/R-BOT
 cd R-BOT-SIMPLE
 npm install
 ```
@@ -60,7 +60,7 @@ $ node .
 ## ❗ Warning
 Don't put bots in multiple groups or your bot will 💀
 
-Editing Number Owner & session name in [`config.js`](https://github.com/rasssya76/R-BOT/blob/main/config.js)
+Editing Number Owner & bot name in [`config.js`](https://github.com/rasssya76/R-BOT/blob/main/config.js)
 
 ## Thanks To
 * [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
